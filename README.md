@@ -38,19 +38,20 @@ on **mobile, tablet, and desktop devices**.
 ## 📸 Website Screenshots
 
 ### 🏠 Home
-![Home](screenshots/home.png)
+![Home](home.png)
 
 ### ℹ️ About Us
-![About Us](screenshots/about.png)
+![About Us](about.png)
 
 ### 🛠️ Services
-![Services](screenshots/services.png)
+![Services](services.png)
 
 ### 🏘️ Properties
-![Properties](screenshots/properties.png)
+![Properties](properties.png)
 
 ### 📞 Contact
-![Contact](screenshots/contact.png)
+![Contact](contact.png)
+
 
 ---
 
