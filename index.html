@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Home Real Estate | PITP Final Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" onclick="showSection('home')">
+                <i class="fa-solid fa-house-chimney"></i> Dream Home
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('services')">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('properties')">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="page-section">
+        <div class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Find Your Dream Home Today</h1>
+                <p class="lead">We make finding your perfect property easy and stress-free.</p>
+                <button class="btn btn-light btn-lg mt-3" onclick="showSection('properties')">Browse Properties</button>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Featured Properties</h2>
+            <div class="row" id="featured-container">
+                </div>
+        </div>
+
+        <div class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Client Testimonials</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3 h-100 shadow-sm">
+                            <p class="fst-italic">"Best service in the city! Found my apartment in 2 days."</p>
+                            <h6 class="text-primary">- Ali Khan</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3 h-100 shadow-sm">
+                            <p class="fst-italic">"Professional agents and very transparent process."</p>
+                            <h6 class="text-primary">- Sara Ahmed</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3 h-100 shadow-sm">
+                            <p class="fst-italic">"Dream Home helped me sell my house at a great price."</p>
+                            <h6 class="text-primary">- Bilal Sheikh</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="page-section d-none">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2>About Dream Home Agency</h2>
+                <p class="text-muted">Trusted by thousands of families since 2010.</p>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Office">
+                </div>
+                <div class="col-md-6">
+                    <h3>Our History & Awards</h3>
+                    <p>Dream Home Real Estate started as a small family business. Today, we are the leading agency in the region, winning the <strong>"Best Real Estate Agency 2024"</strong> award.</p>
+                    <p>We believe in integrity, transparency, and customer satisfaction.</p>
+                </div>
+            </div>
+
+            <h3 class="text-center mb-4">Meet Our Agents</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" width="150" height="150" alt="Agent">
+                    <h5>Ahmed Raza</h5>
+                    <p class="text-muted">Senior Broker</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" width="150" height="150" alt="Agent">
+                    <h5>Fatima Noor</h5>
+                    <p class="text-muted">Rental Specialist</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" width="150" height="150" alt="Agent">
+                    <h5>Zain Malik</h5>
+                    <p class="text-muted">Sales Executive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="page-section d-none">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-primary mb-3"><i class="fa-solid fa-house-user"></i></div>
+                        <h4>Buying Property</h4>
+                        <p>We help you find the perfect home that fits your budget and lifestyle.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-primary mb-3"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h4>Selling Property</h4>
+                        <p>Get the best valuation and market exposure for your property.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-primary mb-3"><i class="fa-solid fa-key"></i></div>
+                        <h4>Rental Management</h4>
+                        <p>We manage tenants, agreements, and maintenance for landlords.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="display-4 text-primary mb-3"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Property Valuation</h4>
+                        <p>Accurate market analysis to determine the true worth of your asset.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="properties" class="page-section d-none">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Browse Properties</h2>
+            
+            <div class="row mb-4 justify-content-center">
+                <div class="col-md-4 mb-2">
+                    <select id="typeFilter" class="form-select">
+                        <option value="all">All Types (Rent/Buy)</option>
+                        <option value="Rent">For Rent</option>
+                        <option value="Buy">For Sale</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input type="text" id="locationSearch" class="form-control" placeholder="Search by Location (e.g. Downtown)...">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <button class="btn btn-primary w-100" onclick="filterProperties()">Search</button>
+                </div>
+            </div>
+
+            <div class="row" id="property-list">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page-section d-none">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Schedule a Visit</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow p-4">
+                        <div id="formAlert" class="alert d-none" role="alert"></div>
+
+                        <form id="visitForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="03001234567">
+                                <div class="form-text">Numbers only, please.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="refId" class="form-label">Property Reference ID (Optional)</label>
+                                <input type="text" class="form-control" id="refId">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="I would like to visit..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Schedule Visit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Dream Home</h5>
+                    <p class="small">Building dreams since 2010.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none" onclick="showSection('properties')">Properties</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none" onclick="showSection('services')">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p class="small"><i class="fa-solid fa-phone"></i> +92 300 123 4567</p>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="mb-0 small">&copy; 2026 Dream Home Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
